@@ -1,0 +1,65 @@
+{
+  "built_at_utc": "2026-04-17T01:00:50.411495+00:00",
+  "raw_source": "/Users/avinashvegiraju/Python_codes/Nike_global/Global_Nike.csv",
+  "raw_source_kind": "global_csv",
+  "duckdb_path": "/Users/avinashvegiraju/Python_codes/project-Final-Nike_Global_2026/artifacts/nike_global.duckdb",
+  "snapshot_dates": [
+    "2026-03-19"
+  ],
+  "low_coverage_row_threshold": 5000,
+  "expected_low_coverage_countries": [
+    "AU",
+    "EG",
+    "IN",
+    "NZ"
+  ],
+  "detected_low_coverage_countries": [
+    "AU",
+    "EG",
+    "IN",
+    "NZ"
+  ],
+  "schema_checks": [
+    {
+      "check_name": "column_count",
+      "expected_value": "35",
+      "actual_value": "35",
+      "passed": true
+    },
+    {
+      "check_name": "raw_row_count",
+      "expected_value": ">= 1000000",
+      "actual_value": "1447795",
+      "passed": true
+    },
+    {
+      "check_name": "snapshot_date_count",
+      "expected_value": "1",
+      "actual_value": "1",
+      "passed": true
+    },
+    {
+      "check_name": "snapshot_date_value",
+      "expected_value": "2026-03-19",
+      "actual_value": "2026-03-19",
+      "passed": true
+    }
+  ],
+  "exports": {
+    "parquet": [
+      "market_summary.parquet",
+      "market_category_mix.parquet",
+      "market_gender_mix.parquet",
+      "market_sport_mix.parquet",
+      "product_market_summary.parquet",
+      "matched_product_price_benchmark.parquet",
+      "matched_price_group_summary.parquet"
+    ],
+    "csv": [
+      "schema_checks.csv",
+      "country_coverage_summary.csv",
+      "market_currency_coverage_summary.csv",
+      "market_summary.csv"
+    ]
+  }
+}
